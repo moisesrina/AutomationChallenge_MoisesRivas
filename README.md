@@ -36,7 +36,7 @@ The project was developed with C# in VS Community 2019, using the following nugg
 -xunit (2.4.1).  
 -xunit.runner.visualstudio (2.4.3).  
 
--The project use excel archives as data providers.
+-The project use excel archives as data providers.  
 -The code follow the bestpractices including regions to make it more mantainable and try catch for each action method.  
 -With the librery "ExtentReports", a TestReport is created automaticatly while the scenarios are running and a single 
 file is created with the results (pass or fail) of each TestScenario and TestStep executed.
