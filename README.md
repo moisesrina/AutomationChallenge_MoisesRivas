@@ -13,8 +13,12 @@ This project was created in Selenium with Specflow using the best practices of P
 6.- Add the specific product ‘Sauce Labs Onesie’ to the shopping cart. / Validate the correct product was added to the cart.  
 7.- Complete a purchase. / Validate the user navigates to the order confirmation page.
 
-The project was developed with C# in VS Community 2019, using the following nuggets.
+In order to develop the project the following IDE and nuggets were required to be installed. 
 
+IDE: 
+-VS Community 2019.
+
+Nuggets:
 -DotNetSeleniumExtras.WaitHelpers (3.11.0).  
 -ExcelDataReader (3.6.0).  
 -ExcelDataReader.DataSet (3.6.0).  
@@ -36,17 +40,24 @@ The project was developed with C# in VS Community 2019, using the following nugg
 -xunit (2.4.1).  
 -xunit.runner.visualstudio (2.4.3).  
 
+To run de project, once the IDE is open, it must be compiled, this action will allow the test scenarios to be shown in the "Test Explorer" window (if the window is not shown, it can be activated in the toolbar Test/Test Explorer), when the test scenarios are displayed, can be executed by group or individualy following the next steps.  
+1.- Select the test or group of tests with the mouse by left-click.  
+2.- Rigth-click from the mouse to deploy the actions menu.  
+3.- Click in Run/First option of the actions menu.
+
+If is required to have all the specflow features, the specflow extention for VS 2019 must be downloaded and installed in the extentions window of the IDE.
+
 -The project use excel archives as data providers.  
--The code follow the bestpractices including regions to make it more mantainable and try catch for each action method.  
+-The code follows the best practices including regions to make it more mantainable and try catch for each action method.  
 -With the librery "ExtentReports", a TestReport is created automaticatly while the scenarios are running and a single 
 file is created with the results (pass or fail) of each TestScenario and TestStep executed.
-The TestReport is an html file created in the following route:
+The TestReport is an html file created in the following route, (to open the TestReport is necesary to doble click the html file):
 
 C:projectroot\bin\Debug\netcoreapp3.1\TestReport
 
--The proyect can run in the newest versions of Chrome & Firefox Browsers.  
--The project also take snapshots in the execution process, this snapshots are taked in all the asserts instructions and in 
-all the catch exceptions in order of provide the image of the validation, can be changed as its need it, this snapshots are
-save it in the following route: (if the route doesn't exist, it will be created in the first action TakeSnapshot event).
+-The proyect can be run in the newest versions of Chrome & Firefox Browsers.  
+-The project also uses a method to take snapshots in the execution process, this snapshots are taken in all the asserts instructions and in 
+all the catch exceptions in order to provide the screenshot of the validation, as a method it can be used wherever it's requiered, this snapshots are
+saved in the following route: (if the route doesn't exist, it will be created in the first action TakeSnapshot event).
 
 C:projectroot\bin\Debug\netcoreapp3.1\Snapshots.
